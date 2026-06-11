@@ -20,7 +20,8 @@ function About() {
     ]
 
     return(
-        <div className="h-dvh grid grid-cols-[1fr_2fr] items-center justify-center snap-y">
+        <div className="h-dvh grid grid-cols-[2fr_2.5fr] items-center justify-center snap-y">
+            {/* column 1 */}
             <section className = "flex flex-col items-start p-[20%]"> 
                 <h1 className="text-white text-[20px] text-center font-bold pb-[3%]"> SKILLS </h1>
                 <section className="flex flex-wrap gap-[10px] gap-y-[5px]"> 
@@ -32,10 +33,14 @@ function About() {
 
                 </section> 
             </section>
+
+            {/* column 2 */}
             <section className="flex flex-col items-start pl-[5%] pr-[20%]">
                 <h1 className="text-white text-[20px] text-center font-bold pb-[3%]"> ABOUT </h1>
                 <p className="text-white font-extralight"> A paragraph about me here. A paragraph about me here. A paragraph about me here. A paragraph about me here.</p>
             </section> 
+
+            {/* potential column 3 for ascii of my photo... */}
         </div>
     )
 }
