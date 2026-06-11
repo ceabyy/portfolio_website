@@ -1,4 +1,4 @@
-import SkillBubble from "@/components/SkillBubble";
+import SkillBubble from "@/components/skills-bubble";
 
 function About() {
 
