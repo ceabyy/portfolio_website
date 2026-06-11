@@ -1,4 +1,4 @@
-import SkillBubble from "@/assets/skills-bubble";
+import SkillBubble from "@/assets/skills-bubble.tsx";
 
 function About() {
 
