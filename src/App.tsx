@@ -47,7 +47,7 @@ function App() {
       backgroundAttachment: 'local',
       backgroundSize: '100% 600vh',
       backgroundRepeat: 'no-repeat'
-    }} className="main-page overflow-y-scroll h-screen">
+    }} className="main-page overflow-y-scroll h-screen font-['Helvetica_Neue']">
 
       <Hero />
       <About />
