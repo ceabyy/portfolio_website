@@ -12,7 +12,7 @@ function Education() {
             />
             <EducationCard 
                 school="Mesaieed International School"
-                date="2022-2025"
+                date="2009-2022"
                 details="A-Levels: Computer Science A*, Mathematics A*, Physics A"
             />
         </div>
