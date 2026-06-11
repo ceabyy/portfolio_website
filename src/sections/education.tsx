@@ -1,4 +1,4 @@
-import EducationCard from '@/components/education-card';
+import EducationCard from '../components/education-card.tsx';
 
 function Education() {
 
