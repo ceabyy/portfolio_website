@@ -12,7 +12,6 @@ function App() {
   return (
     // handling background of the page using gradients from figma prototype.
     <div style={{
-      minHeight: '100vh',
       background: `linear-gradient(to bottom,
         #FFE398 0%,
         #FF8AAB 4%,
@@ -45,9 +44,9 @@ function App() {
         #E4FC87 100%
       )`,
       backgroundAttachment: 'local',
-      backgroundSize: '100% 600vh',
+      backgroundSize: '100% 600lvh',
       backgroundRepeat: 'no-repeat'
-    }} className="main-page overflow-y-scroll h-screen font-['Helvetica_Neue']">
+    }} className="main-page overflow-y-scroll h-dvh font-['Helvetica_Neue']">
 
       <Hero />
       <About />
