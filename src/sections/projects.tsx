@@ -3,7 +3,7 @@ import ProjectCard from '../components/project-card.tsx';
 
 function Projects() {
     return (
-        <div className = "h-dvh flex flex-col items-center justify-center snap-y">
+        <div className = "h-dvh flex flex-col items-center justify-center">
             <h1 className="text-[20px] md:text-[25px] font-bold text-[#904C7E] pb-[2%]"> PROJECTS. </h1>
             <div className="project-card-container 
 
@@ -20,6 +20,9 @@ function Projects() {
                             pt-[5%] 
                             gap-[5%] 
                             overflow-y-scroll
+                            snap-y
+                            snap-mandatory
+                            scroll-p-[4%]
                             
                             md:flex 
                             md:flex-row 
@@ -32,7 +35,10 @@ function Projects() {
                             md:shadow-xl 
                             md:p-[2%] 
                             md:gap-[2%] 
-                            md:overflow-x-scroll">
+                            md:overflow-x-scroll
+                            md:snap-x
+                            md:scroll-p-[1.5%]">
+
                 <ProjectCard />
                 <ProjectCard />
                 <ProjectCard />

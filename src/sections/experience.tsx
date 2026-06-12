@@ -8,7 +8,6 @@ function Experience() {
                         flex-col
                         items-center 
                         justify-center 
-                        snap-y 
                         p-[5%]
                         gap-[5%]
                         
@@ -17,7 +16,6 @@ function Experience() {
                         md:flex-row
                         md:items-center 
                         md:justify-center 
-                        md:snap-y 
                         md:p-[5%]"> 
             <h1 className="text-white 
                         align-center
@@ -38,8 +36,12 @@ function Experience() {
                             shadow-xl 
                             overflow-y-auto 
                             scroll-smooth 
-                            p-[2%] 
+                            p-[5%] 
+                            pt-[5%]
                             gap-[5%]
+                            snap-mandatory
+                            snap-y
+                            scroll-p-[4%]
                             
                             md:flex 
                             md:flex-col 
@@ -51,7 +53,8 @@ function Experience() {
                             md:rounded-[50px] 
                             md:shadow-xl 
                             md:overflow-y-auto 
-                            md:scroll-smooth p-[2%] 
+                            md:scroll-smooth 
+                            md:p-[2%] 
                             md:gap-[5%]
                             md:h-[90%] ">
                 <ExperienceCard />

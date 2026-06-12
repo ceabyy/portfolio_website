@@ -46,14 +46,33 @@ function App() {
       backgroundAttachment: 'local',
       backgroundSize: '100% 600lvh',
       backgroundRepeat: 'no-repeat'
-    }} className="main-page overflow-y-scroll h-dvh font-['Helvetica_Neue']">
-
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Education />
-      <Links />
+    }} className="main-page 
+          
+                  overflow-y-scroll 
+                  h-dvh 
+                  snap-y 
+                  snap-mandatory
+                  font-['Helvetica_Neue']
+                  
+                  snap-y">
+      <section className = "snap-start"> 
+        <Hero /> 
+      </section>
+      <section className = "snap-start"> 
+        <About /> 
+      </section>
+      <section className = "snap-start"> 
+        <Experience /> 
+      </section >
+      <section className = "snap-start">
+        <Projects /> 
+      </section>
+      <section className = "snap-start"> 
+        <Education /> 
+      </section>
+      <section className = "snap-start"> 
+        <Links /> 
+      </section>
     </div>
   ) 
 }

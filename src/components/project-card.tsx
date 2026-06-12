@@ -16,6 +16,8 @@ function ProjectCard() {
                         shadow-2xl 
                         overflow-y-auto 
 
+                        snap-start
+
                         md:bg-[#FFE6F7] 
                         md:flex 
                         md:flex-shrink-0 
