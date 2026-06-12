@@ -4,7 +4,7 @@ function Education() {
 
     return(
         <div className="h-dvh flex flex-col items-start justify-center snap-y pl-[20%]">
-            <h1 className="text-[30px] text-white font-bold flex"> EDUCATION </h1>
+            <h1 className="text-[30px] text-white font-bold flex"> EDUCATION. </h1>
             <EducationCard
                 school="Tampere University"
                 date="August 2022 - December 2025"

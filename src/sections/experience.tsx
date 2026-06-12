@@ -21,11 +21,11 @@ function Experience() {
                         md:p-[5%]"> 
             <h1 className="text-white 
                         align-center
-                        text-[15px] 
+                        text-[20px] 
                         font-bold 
                         
                         md:text-[20px] 
-                        md:pr-[5%]"> EXPERIENCE </h1>
+                        md:pr-[5%]"> EXPERIENCE. </h1>
             <div className="experience-card-container 
 
                             flex 
