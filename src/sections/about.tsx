@@ -37,7 +37,7 @@ function About() {
             {/* column 2 */}
             <section className="h-[50%] flex flex-col items-start justify-center pl-[20%] pr-[20%] md:pl-[10%] md:pr-[15%] md:h-full md:w-[60%]">
                 <h1 className="text-white text-[20px] text-center font-bold pb-[3%]"> ABOUT. </h1>
-                <p className="text-white font-extralight "> Hi! My name is Ceaby. I'd say I'm very attentive, curious, self-motivated and thrive as a team leader or member. I'm a Bachelor of Science (Technology) graduate, having majored in signal processing and machine learning (ML), with a further educational background in computer science, ML and artificial intelligence (AI).</p>
+                <p className="text-white md:text-[20px] font-extralight "> Hi! My name is Ceaby. I'd say I'm very attentive, curious, self-motivated and thrive as a team leader or member. I'm a Bachelor of Science (Technology) graduate, having majored in signal processing and machine learning (ML), with a further educational background in computer science, ML and artificial intelligence (AI).</p>
             </section> 
 
             {/* potential column 3 for ascii of my photo */}
