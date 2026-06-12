@@ -1,10 +1,6 @@
 // experience cards for container in experience page
 
-type Props = {
-    title: string;
-    dates: string;
-    information: string; /* this can be turned into bullet points later on -- map function */
-}
+// add props here later on
 
 function ExperienceCard() {
     return (
