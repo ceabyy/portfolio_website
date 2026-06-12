@@ -36,6 +36,7 @@ function Projects() {
                             md:p-[2%] 
                             md:gap-[2%] 
                             md:overflow-x-scroll
+                            md:overflow-y-hidden
                             md:snap-x
                             md:scroll-p-[1.5%]">
 
