@@ -11,7 +11,7 @@ function ProjectCard() {
                         justify-start 
                         h-[80%] 
                         w-[90%] 
-                        rounded-[50px] 
+                        rounded-[40px] 
                         p-[10%]
                         shadow-2xl 
                         overflow-y-auto 
@@ -46,7 +46,7 @@ function ProjectCard() {
                             justify-center
                             shadow-lg"> image placeholder </div>
             <p className="text-[15px] md:text-[20px] text-[#C178B4] italic -mt-1 md:-mt-2 pt-[5%]"> Project Details </p>
-            <p className=" h-[90%] w-full text-[10px] md:text-[15px] text-[#CB76B1] font-light pt-[5%] md:pt-[1%] break-words"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum. Quisque tempor est rutrum placerat pulvinar. Phasellus in enim vitae odio efficitur iaculis eget eu ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+            <p className="h-[90%] w-full text-[10px] md:text-[15px] text-[#CB76B1] font-light pt-[5%] md:pt-[1%] break-words"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum. Quisque tempor est rutrum placerat pulvinar. Phasellus in enim vitae odio efficitur iaculis eget eu ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
         </div>
     )
 }

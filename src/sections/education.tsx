@@ -3,8 +3,8 @@ import EducationCard from '../components/education-card.tsx';
 function Education() {
 
     return(
-        <div className="h-dvh flex flex-col items-start justify-center pl-[20%]">
-            <h1 className="text-[30px] text-white font-bold flex"> EDUCATION. </h1>
+        <div className="h-dvh flex flex-col items-start justify-center pl-[10%] pr-[10%] md:pl-[15%] md:pr-0">
+            <h1 className="text-[30px] text-white font-bold flex md:shadow-none"> EDUCATION. </h1>
             <EducationCard
                 school="Tampere University"
                 date="August 2022 - December 2025"

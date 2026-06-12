@@ -1,8 +1,8 @@
 function Links() {
 
     return(
-        <div className="h-dvh flex flex-col items-start justify-center snap-y pl-[20%]">
-            <h1 className="text-[40px] font-bold text-white pb-[2%]"> LINKS. </h1>
+        <div className="h-dvh flex flex-col items-start justify-center snap-y pl-[10%] md:pl-[15%]">
+            <h1 className="text-[30px] md:text-[40px] font-bold text-white pb-[2%]"> LINKS. </h1>
                 <a href = "https://github.com/ceabyy" target="_blank" className="text-[20px] 
                                                                                 font-light 
                                                                                 underline 
