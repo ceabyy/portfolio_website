@@ -20,11 +20,39 @@ function About() {
     ]
 
     return(
-        <div className="h-dvh flex flex-col md:flex-row items-center justify-center snap-y gap-[5%]">
+        <div className="h-dvh 
+                        flex 
+                        flex-col 
+                        items-center 
+                        justify-center 
+                        snap-y 
+                        gap-[5%]
+                        
+                        md:flex-row">
             {/* column 1 */}
-            <section className = "h-[50%] flex flex-col items-start justify-center pl-[20%] pr-[20%] md:pl-[10%] md:pr-0 md:h-full md:w-[30%]"> 
-                <h1 className="text-[#1E3576] md:text-white text-[20px] text-center font-bold pb-[3%]"> SKILLS. </h1>
-                <section className="flex flex-wrap gap-[10px] gap-y-[10px]"> 
+            <section className="h-[50%] 
+                                flex 
+                                flex-col 
+                                items-start 
+                                justify-center 
+                                pl-[20%] 
+                                pr-[20%] 
+                                
+                                md:pl-[10%] 
+                                md:pr-0 
+                                md:h-full 
+                                md:w-[30%]"> 
+
+                <h1 className="text-[#1E3576] 
+                                text-center 
+                                font-bold 
+                                pb-[3%]
+                                
+                                md:text-white text-[20px] "> SKILLS. </h1>
+                <section className="flex 
+                                    flex-wrap 
+                                    gap-[10px] 
+                                    gap-y-[10px]"> 
 
                     {/* map function */}
                     {skills.map((skill) => (
@@ -35,9 +63,28 @@ function About() {
             </section>
 
             {/* column 2 */}
-            <section className="h-[50%] flex flex-col items-start justify-center pl-[20%] pr-[20%] md:pl-[10%] md:pr-[15%] md:h-full md:w-[60%]">
-                <h1 className="text-white text-[20px] text-center font-bold pb-[3%]"> ABOUT. </h1>
-                <p className="text-white md:text-[20px] font-extralight "> Hi! My name is Ceaby. I'd say I'm very attentive, curious, self-motivated and thrive as a team leader or member. I'm a Bachelor of Science (Technology) graduate, having majored in signal processing and machine learning (ML), with a further educational background in computer science, ML and artificial intelligence (AI).</p>
+            <section className="h-[50%] 
+                                flex 
+                                flex-col 
+                                items-start 
+                                justify-center 
+                                pl-[20%] 
+                                pr-[20%] 
+                                
+                                md:pl-[10%] 
+                                md:pr-[15%] 
+                                md:h-full 
+                                md:w-[60%]">
+
+                <h1 className="text-white 
+                                text-[20px] 
+                                text-center 
+                                font-bold 
+                                pb-[3%]"> ABOUT. </h1>
+                <p className="text-white 
+                            font-extralight 
+                            md:text-[20px] "> Hi! My name is Ceaby. I'd say I'm very attentive, curious, self-motivated and thrive as a team leader or member. I'm a Bachelor of Science (Technology) graduate, having majored in signal processing and machine learning (ML), with a further educational background in computer science, ML and artificial intelligence (AI).</p>
+            
             </section> 
 
             {/* potential column 3 for ascii of my photo */}
