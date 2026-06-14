@@ -55,7 +55,7 @@ function App() {
                   font-['Helvetica_Neue']
                   
                   snap-y">
-      <section className = "snap-start"> 
+      <section className = "snap-start"> /* snap-start to handle/mark the snap effect*/
         <Hero /> 
       </section>
       <section className = "snap-start"> 
