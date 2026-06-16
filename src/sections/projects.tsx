@@ -12,7 +12,7 @@ function Projects() {
                             items-center 
                             justify-start 
                             w-[90%] 
-                            h-[80%] 
+                            h-[85%] 
                             bg-[#FFD0D0]/35 
                             rounded-[50px] 
                             shadow-xl 

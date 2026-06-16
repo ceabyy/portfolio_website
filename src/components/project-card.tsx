@@ -1,4 +1,5 @@
 // experience cards for container in experience page
+import ProjectSkillsBubble from "../components/project-skills-bubble.tsx";
 
 // add props here later on
 
@@ -14,7 +15,8 @@ function ProjectCard() {
                         rounded-[40px] 
                         p-[10%]
                         shadow-2xl 
-                        overflow-y-auto 
+                        overflow-y-auto
+                        gap-[2%] 
 
                         snap-start
 
@@ -51,15 +53,29 @@ function ProjectCard() {
                         italic 
                         -mt-1 
                         md:-mt-2 
-                        pt-[5%]"> Project Details </p>
+                        pt-[1%]
+                        md: pt-[5%]"> Project Details </p>
             <p className="h-[90%] 
                         w-full text-[10px] 
                         md:text-[15px] 
                         text-[#CB76B1] 
                         font-light 
-                        pt-[5%] 
-                        md:pt-[1%] 
-                        break-words"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum. Quisque tempor est rutrum placerat pulvinar. Phasellus in enim vitae odio efficitur iaculis eget eu ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                        pt-[0%] 
+                        overflow-y-scroll
+                        -mt-2
+                        
+                        md:pt-[0%]
+                        md:overflow-y-auto
+                        break-words"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum.  </p>
+        {/*  Insert skills here as bubbles */}
+            <div className="project-skills-bubbles flex flex-wrap items-start gap-[2%] gap-y-[0.5rem]">
+                <ProjectSkillsBubble name="Skill"/>
+                <ProjectSkillsBubble name="SkillSkill"/>
+                <ProjectSkillsBubble name="SkillSkillSkillSkill"/>
+                <ProjectSkillsBubble name="SkillSkill"/>
+                <ProjectSkillsBubble name="Skill"/>
+                <ProjectSkillsBubble name="SkillSkill"/>
+            </div>
         </div>
     )
 }
