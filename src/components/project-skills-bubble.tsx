@@ -6,11 +6,12 @@ type Props = {
 
 function ProjectSkillsBubble({ name }: Props) {
     return (
-        <div className="bg-[#F5BEE3]/75
+        <div className="bg-[#F5BEE3]/60
                         shadow-md
                         rounded-[15px]">
-            <p className="text-white
-                        text-[15px]
+            <p className="text-[#CB76B1]
+
+                        text-[12px] 
                         pl-3 
                         pr-3 
                         pt-1 
@@ -20,3 +21,5 @@ function ProjectSkillsBubble({ name }: Props) {
 }
 
 export default ProjectSkillsBubble
+
+{/* ALTERNATIVE TEXT COLOURS: #CB76B1*/}

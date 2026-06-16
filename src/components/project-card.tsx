@@ -33,8 +33,7 @@ function ProjectCard() {
                         md:overflow-y-hidden">
             <p className="text-[20px]  
                         text-[#C178B4] 
-                        font-bold 
-                        pb-[5%] 
+                        font-bold
 
                         md:text-[25px]"> PROJECT </p>
             <div className="bg-[#FFFFFF]
@@ -50,7 +49,7 @@ function ProjectCard() {
             <p className="text-[15px] 
                         md:text-[20px] 
                         text-[#C178B4] 
-                        italic 
+
                         -mt-1 
                         md:-mt-2 
                         pt-[1%]
@@ -62,7 +61,6 @@ function ProjectCard() {
                         font-light 
                         pt-[0%] 
                         overflow-y-scroll
-                        -mt-2
                         
                         md:pt-[0%]
                         md:overflow-y-auto
@@ -70,11 +68,11 @@ function ProjectCard() {
         {/*  Insert skills here as bubbles */}
             <div className="project-skills-bubbles flex flex-wrap items-start gap-[2%] gap-y-[0.5rem]">
                 <ProjectSkillsBubble name="Skill"/>
-                <ProjectSkillsBubble name="SkillSkill"/>
-                <ProjectSkillsBubble name="SkillSkillSkillSkill"/>
-                <ProjectSkillsBubble name="SkillSkill"/>
+                <ProjectSkillsBubble name="Skill Skill"/>
+                <ProjectSkillsBubble name="Skill Skill Skill"/>
+                <ProjectSkillsBubble name="Skill Skill"/>
                 <ProjectSkillsBubble name="Skill"/>
-                <ProjectSkillsBubble name="SkillSkill"/>
+                <ProjectSkillsBubble name="Skill Skill"/>
             </div>
         </div>
     )

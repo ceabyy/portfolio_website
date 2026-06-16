@@ -31,7 +31,6 @@ function ExperienceCard() {
                         md:text-[20px] 
                         text-[#B73854] 
                         font-light 
-                        italic 
                         -mt-1 
                         md:-mt-2"> June 2026 - Present</p>
 
