@@ -12,6 +12,8 @@ function ProjectSkillsBubble({ name }: Props) {
             <p className="text-[#CB76B1]
 
                         text-[12px] 
+                        md:text-[15px]
+                        
                         pl-3 
                         pr-3 
                         pt-1 
