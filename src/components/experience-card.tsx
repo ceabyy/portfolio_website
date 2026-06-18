@@ -8,7 +8,7 @@ type Props = {
     company : string
     position : string
     dates : string
-    details : string
+    details : string[] 
 }
 
 function ExperienceCard({company, position, dates, details} : Props) {
@@ -37,28 +37,31 @@ function ExperienceCard({company, position, dates, details} : Props) {
                         font-bold "> { company.toUpperCase() } </p>
 
             <p className="text-[15px] 
-                        md:text-[20px] 
+                        md:text-[18px] 
                         text-[#B73854] 
                         font-light 
                         -mt-1 
                         md:-mt-2"> { position } </p>
 
             <p className="text-[15px] 
-                        md:text-[20px] 
+                        md:text-[15px] 
                         text-[#B73854] 
                         font-light 
                         -mt-1 
                         md:-mt-2"> { dates } </p>
-
-            <p className="h-[90%] 
-                        w-full 
-                        text-[10px]
-                        md:text-[15px] 
-                        text-[#B73854] 
-                        font-light 
-                        pt-[2%] 
-                        md:pt-[1%]
-                        break-words"> { details } </p>
+            <ul className="pt-[2%] list-disc list-inside">
+                { details.map((detail, i) => (
+                    <li key={ i } className="h-[90%] 
+                                w-full 
+                                text-[10px]
+                                md:text-[15px] 
+                                text-[#B73854] 
+                                font-light
+                                leading-none
+                                break-words
+                                -mt-1"> { detail } </li>
+                )) }
+            </ul>
         </div>
     )
 }

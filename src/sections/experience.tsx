@@ -4,9 +4,9 @@ import ExperienceCard from '../components/experience-card.tsx';
 function Experience() {
 
     const experience = [
-        { company:"A&A Accounting", position:"Computer Science Intern", dates:"June 2026 - Present", details:"Worked on full stack creation of accounting software" },
-        { company:"Tampere University", position: "Content Crew Student Ambassador", dates:"October 2024 - December 2025", details:"Worked on posting on university social media" },
-        { company:"Tampere University", position: "Social Media Assistant", dates:"August 2023 - June 2024", details:"Worked on posting on university faculty's social media" },
+        { company:"A&A Accounting", position:"Computer Science Intern", dates:"June 2026 - Present", details:["Worked on full stack creation of accounting software"]},
+        { company:"Tampere University", position: "Content Crew Student Ambassador", dates:"October 2024 - December 2025", details:["Worked on posting on university social media", "Teamwork and collaboration in brainstorming ideas"] },
+        { company:"Tampere University, Faculty of Science and Engineering", position: "Social Media Assistant", dates:"August 2023 - June 2024", details:["Worked on posting on university faculty's social media", "Attained top-ranking posts in the accounts' history"] },
     ]
 
     return (
@@ -74,7 +74,6 @@ function Experience() {
                         details={ exp.details }
                     />
                 ))}
-                
             </div>
         </div>
     )
