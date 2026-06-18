@@ -2,6 +2,13 @@
 import ExperienceCard from '../components/experience-card.tsx';
 
 function Experience() {
+
+    const experience = [
+        { company:"A&A Accounting", position:"Computer Science Intern", dates:"June 2026 - Present", details:"Worked on full stack creation of accounting software" },
+        { company:"Tampere University", position: "Content Crew Student Ambassador", dates:"October 2024 - December 2025", details:"Worked on posting on university social media" },
+        { company:"Tampere University", position: "Social Media Assistant", dates:"August 2023 - June 2024", details:"Worked on posting on university faculty's social media" },
+    ]
+
     return (
         <div className="h-dvh 
                         flex    
@@ -58,12 +65,16 @@ function Experience() {
                             md:gap-[5%]
                             md:h-[90%] ">
                                 
-                <ExperienceCard />
-                <ExperienceCard />
-                <ExperienceCard />
-                <ExperienceCard />
-                <ExperienceCard />
-                <ExperienceCard />
+                {experience.map((exp) => (
+                    <ExperienceCard
+                        key={ exp.company }
+                        company={ exp.company }
+                        position={ exp.position }
+                        dates={ exp.dates }
+                        details={ exp.details }
+                    />
+                ))}
+                
             </div>
         </div>
     )

@@ -17,7 +17,7 @@ function Education() {
             <EducationCard
                 school="Tampere University"
                 date="August 2022 - December 2025"
-                details="Bachelor of Science (Technology))"
+                details="Bachelor of Science (Technology)"
             />
             <EducationCard 
                 school="Mesaieed International School"

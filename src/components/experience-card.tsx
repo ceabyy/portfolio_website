@@ -2,7 +2,16 @@
 
 // add props here later on
 
-function ExperienceCard() {
+// can convert this into list of strings
+
+type Props = {
+    company : string
+    position : string
+    dates : string
+    details : string
+}
+
+function ExperienceCard({company, position, dates, details} : Props) {
     return (
         <div className="bg-[#FFDADB] 
                         flex 
@@ -25,14 +34,21 @@ function ExperienceCard() {
             <p className="text-[20px] 
                         md:text-[25px] 
                         text-[#B73854] 
-                        font-bold "> COMPANY </p>
+                        font-bold "> { company.toUpperCase() } </p>
 
             <p className="text-[15px] 
                         md:text-[20px] 
                         text-[#B73854] 
                         font-light 
                         -mt-1 
-                        md:-mt-2"> June 2026 - Present</p>
+                        md:-mt-2"> { position } </p>
+
+            <p className="text-[15px] 
+                        md:text-[20px] 
+                        text-[#B73854] 
+                        font-light 
+                        -mt-1 
+                        md:-mt-2"> { dates } </p>
 
             <p className="h-[90%] 
                         w-full 
@@ -40,9 +56,9 @@ function ExperienceCard() {
                         md:text-[15px] 
                         text-[#B73854] 
                         font-light 
-                        pt-[5%] 
-                        md:pt-[2%]
-                        break-words"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum. Quisque tempor est rutrum placerat pulvinar. Phasellus in enim vitae odio efficitur iaculis eget eu ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                        pt-[2%] 
+                        md:pt-[1%]
+                        break-words"> { details } </p>
         </div>
     )
 }
