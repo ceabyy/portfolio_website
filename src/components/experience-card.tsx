@@ -31,7 +31,7 @@ function ExperienceCard({company, position, dates, details} : Props) {
                         md:overflow-y-hidden 
                         snap-start">
 
-            <p className="text-[20px] 
+            <p className="text-[15px] 
                         md:text-[25px] 
                         text-[#B73854] 
                         font-bold "> { company.toUpperCase() } </p>
@@ -49,17 +49,18 @@ function ExperienceCard({company, position, dates, details} : Props) {
                         font-light 
                         -mt-1 
                         md:-mt-2"> { dates } </p>
-            <ul className="pt-[2%] list-disc list-inside">
+            <ul className="pt-[4%] md:pt-[2%] list-disc list-inside">
                 { details.map((detail, i) => (
                     <li key={ i } className="h-[90%] 
                                 w-full 
-                                text-[10px]
+                                text-[12px]
                                 md:text-[15px] 
                                 text-[#B73854] 
                                 font-light
                                 leading-none
                                 break-words
-                                -mt-1"> { detail } </li>
+                                -mt-0.8
+                                md:-mt-1"> { detail } </li>
                 )) }
             </ul>
         </div>
