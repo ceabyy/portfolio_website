@@ -47,8 +47,7 @@ function ExperienceCard({company, position, dates, details} : Props) {
                         md:text-[15px] 
                         text-[#B73854] 
                         font-light 
-                        -mt-1 
-                        md:-mt-2"> { dates } </p>
+                        -mt-1"> { dates } </p>
             <ul className="pt-[4%] md:pt-[2%] list-disc list-inside">
                 { details.map((detail, i) => (
                     <li key={ i } className="h-[90%] 
