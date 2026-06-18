@@ -18,19 +18,19 @@ function Experience() {
                         p-[5%]
                         gap-[5%]
                         
+                        md:p-[2%]
                         md:h-dvh 
                         md:flex 
                         md:flex-row
                         md:items-center 
-                        md:justify-center 
-                        md:p-[5%]"> 
+                        md:justify-center"> 
             <h1 className="text-white 
                         align-center
                         text-[20px] 
                         font-bold 
                         
                         md:text-[20px] 
-                        md:pr-[5%]"> EXPERIENCE. </h1>
+                        md:p-[5%]"> EXPERIENCE. </h1>
             <div className="experience-card-container 
 
                             flex 
