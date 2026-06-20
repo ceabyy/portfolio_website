@@ -93,7 +93,7 @@ function ProjectCard({projectTitle, projectHeader, projectDescription} : Props) 
                         
                         md:pt-[0%]
                         md:overflow-y-auto
-                        break-words"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum.  </p>
+                        break-words"> { projectDescription }  </p>
         {/*  Insert skills here as bubbles */}
             <motion.div variants={ NestedContainer }
                         initial="hidden"
