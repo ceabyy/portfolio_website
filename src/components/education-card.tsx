@@ -1,29 +1,57 @@
+import { motion, type Variants } from 'framer-motion';
+
 type Props = {
     school: string
     date: string
     details: string /* replace with string[] later on */ 
 }
+// handles animations for motion.
+const container: Variants = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.15
+        }
+    }
+};
 
+const item: Variants = {
+    hidden: { opacity: 0, y: 40 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.6,
+            ease: "easeInOut"
+        }
+    }
+}
 function EducationCard({ school, date, details }: Props) {
     return (
-        <div className="pb-[4%]">
-            <h1 className="text-[20px] 
+        <motion.div variants={ container }
+                    initial="hidden"
+                    whileInView="show"
+                    className="pb-[4%]">
+            <motion.h1 variants={ item }
+                        className="text-[20px] 
                             text-white 
                             font-bold 
                             flex 
-                            items-start"> {school.toUpperCase()} </h1>
-            <h1 className="text-[20px] 
+                            items-start"> {school.toUpperCase()} </motion.h1>
+            <motion.h1 variants={ item } 
+                        className="text-[20px] 
                             text-white
                             italic 
                             flex 
-                            items-start"> {date} </h1>
-            <h1 className="text-[20px] 
+                            items-start"> {date} </motion.h1>
+            <motion.h1 variants={ item } 
+                        className="text-[20px] 
                             font-extralight 
                             text-white 
                             flex 
                             items-start 
-                            pt-[5%]"> {details} </h1>
-        </div>
+                            pt-[5%]"> {details} </motion.h1>
+        </motion.div>
     )
 }
 
