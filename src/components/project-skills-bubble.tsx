@@ -1,12 +1,27 @@
 // This skill bubble will be used for each of the project cards i.e. related skills
+import { motion, type Variants } from 'framer-motion';
 
 type Props = {
     name : string
 }
 
+
+const NestedItem: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.3,
+            ease: "easeInOut"
+        }
+    }
+}
+
 function ProjectSkillsBubble({ name }: Props) {
     return (
-        <div className="bg-[#F5BEE3]/60
+        <motion.div variants={ NestedItem }
+                    className="bg-[#F5BEE3]/60
                         shadow-md
                         rounded-[15px]">
             <p className="text-[#CB76B1]
@@ -18,7 +33,7 @@ function ProjectSkillsBubble({ name }: Props) {
                         pr-3 
                         pt-1 
                         pb-1"> { name } </p>
-        </div>
+        </motion.div>
     )
 }
 

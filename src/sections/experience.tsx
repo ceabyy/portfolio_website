@@ -107,8 +107,6 @@ function Experience() {
                             md:flex-col 
                             md:justify-start 
                             md:bg-[#FFD0D0]/40 
-                            md:w-[100%]
-                            md:w-[65%] 
                             md:h-[90%] 
                             md:rounded-[50px] 
                             md:shadow-xl 
