@@ -18,8 +18,6 @@ function ExperienceCard({company, position, dates, details} : Props) {
                         flex-shrink-0 
                         flex-col 
                         justify-start 
-                        h-[35%] 
-                        md:h-[35%] 
                         w-full 
                         rounded-[30px] 
                         md:rounded-[50px] 
@@ -58,8 +56,7 @@ function ExperienceCard({company, position, dates, details} : Props) {
                                 font-light
                                 leading-none
                                 break-words
-                                -mt-0.8
-                                md:-mt-1"> { detail } </li>
+                                -mt-0.8"> { detail } </li>
                 )) }
             </ul>
         </div>

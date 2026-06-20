@@ -1,5 +1,49 @@
 // experience page
 import ExperienceCard from '../components/experience-card.tsx';
+import { motion, type Variants } from 'framer-motion';
+// for motion handling, i.e. fade in and move up movement
+
+const container: Variants = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.15
+        }
+    }
+};
+
+const NestedContainer: Variants = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.1
+        }
+    }
+};
+
+const item: Variants = {
+    hidden: { opacity: 0, y: 40 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.6,
+            ease: "easeInOut"
+        }
+    }
+}
+
+const NestedItem: Variants = {
+    hidden: { opacity: 0, y: -40 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.6,
+            ease: "easeInOut"
+        }
+    }
+}
 
 function Experience() {
 
@@ -7,10 +51,15 @@ function Experience() {
         { company:"A&A Accounting", position:"Computer Science Intern", dates:"June 2026 - Present", details:["Worked on full stack creation of accounting software"]},
         { company:"Tampere University", position: "Content Crew Student Ambassador", dates:"October 2024 - December 2025", details:["Worked on posting on university social media", "Teamwork and collaboration in brainstorming ideas"] },
         { company:"Tampere University", position: "Social Media Assistant", dates:"August 2023 - June 2024", details:["Worked on posting on university faculty's social media", "Attained top-ranking posts in the accounts' history"] },
+        { company:"Tampere University", position: "Social Media Assistant", dates:"August 2023 - June 2024", details:["Worked on posting on university faculty's social media", "Attained top-ranking posts in the accounts' history"] },
     ]
 
     return (
-        <div className="h-dvh 
+        <motion.div variants={ container }
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="h-dvh 
                         flex    
                         flex-col
                         items-center 
@@ -24,15 +73,19 @@ function Experience() {
                         md:flex-row
                         md:items-center 
                         md:justify-center"> 
-            <h1 className="text-white 
+            <motion.h1  variants={ item }
+                        className="text-white 
                         align-center
                         text-[20px] 
                         font-bold 
                         
                         md:text-[20px] 
-                        md:p-[5%]"> EXPERIENCE. </h1>
-            <div className="experience-card-container 
-
+                        md:p-[5%]"> EXPERIENCE. </motion.h1>
+            <motion.div variants={ NestedContainer }
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="experience-card-container 
                             flex 
                             flex-col 
                             justify-start 
@@ -63,19 +116,22 @@ function Experience() {
                             md:scroll-smooth 
                             md:p-[2%] 
                             md:gap-[5%]
-                            md:h-[90%] ">
-                                
+                            md:h-[90%] ">   
+
                 {experience.map((exp) => (
-                    <ExperienceCard
-                        key={ exp.company }
-                        company={ exp.company }
-                        position={ exp.position }
-                        dates={ exp.dates }
-                        details={ exp.details }
-                    />
+                    <motion.div variants={ NestedItem }>
+                        <ExperienceCard
+                            key={ exp.company }
+                            company={ exp.company }
+                            position={ exp.position }
+                            dates={ exp.dates }
+                            details={ exp.details }
+                        />
+                    </motion.div>
                 ))}
-            </div>
-        </div>
+
+            </motion.div>
+        </motion.div>
     )
 }
 
