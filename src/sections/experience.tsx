@@ -50,8 +50,8 @@ function Experience() {
     const experience = [
         { company:"A&A Accounting", position:"Computer Science Intern", dates:"June 2026 - Present", details:["Worked on full stack creation of accounting software"]},
         { company:"Tampere University", position: "Content Crew Student Ambassador", dates:"October 2024 - December 2025", details:["Worked on posting on university social media", "Teamwork and collaboration in brainstorming ideas"] },
-        { company:"Tampere University", position: "Social Media Assistant", dates:"August 2023 - June 2024", details:["Worked on posting on university faculty's social media", "Attained top-ranking posts in the accounts' history"] },
-        { company:"Tampere University", position: "Social Media Assistant", dates:"August 2023 - June 2024", details:["Worked on posting on university faculty's social media", "Attained top-ranking posts in the accounts' history"] },
+        { company:"Tampere University", position: "Faculty Social Media Assistant", dates:"August 2023 - June 2024", details:["Worked on posting on university faculty's social media", "Attained top-ranking posts in the accounts' history"] },
+        { company:"Fandom Shop QA", position: "Owner", dates:"March 2019 - March 2020", details:["Coordinated logistics to bring K-Pop merch to Qatar", "Managed social media, directly communicating with customers"] },
     ]
 
     return (
@@ -67,7 +67,8 @@ function Experience() {
                         p-[5%]
                         gap-[5%]
                         
-                        md:p-[2%]
+                        md:pr-[10%]
+                        md:pl-[10%]
                         md:h-dvh 
                         md:flex 
                         md:flex-row
@@ -79,8 +80,8 @@ function Experience() {
                         text-[20px] 
                         font-bold 
                         
-                        md:text-[20px] 
-                        md:p-[5%]"> EXPERIENCE. </motion.h1>
+                        md:pr-[5%]
+                        md:text-[20px]"> EXPERIENCE. </motion.h1>
             <motion.div variants={ NestedContainer }
                         initial="hidden"
                         whileInView="show"
