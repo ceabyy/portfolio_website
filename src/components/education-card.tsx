@@ -5,6 +5,7 @@ type Props = {
     date: string
     details: string /* replace with string[] later on */ 
 }
+
 // handles animations for motion.
 const container: Variants = {
     hidden: {},
@@ -31,6 +32,7 @@ function EducationCard({ school, date, details }: Props) {
         <motion.div variants={ container }
                     initial="hidden"
                     whileInView="show"
+                    viewport={{ once: true, amount: 0.3}}
                     className="pb-[4%]">
             <motion.h1 variants={ item }
                         className="text-[20px] 
