@@ -1,5 +1,11 @@
 // PROJECTS SECTION /PAGE
 import ProjectCard from '../components/project-card.tsx';
+
+//importing images for projects
+import PortfolioPreview from '../assets/portfolio-preview.png';
+import HappyWoofPreview from '../assets/happywoof-preview.png';
+import RemoteWorkersPreview from '../assets/remoteworkers-preview.png'
+
 import { motion, type Variants } from 'framer-motion';
 
 // handles animations for motion.
@@ -36,13 +42,9 @@ const item: Variants = {
 function Projects() {
 
     const projects = [
-        {projectTitle:"Project", projectHeader:"Small subheader of what project is", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum."},
-        {projectTitle:"Project", projectHeader:"Small subheader of what project is", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum."},
-        {projectTitle:"Project", projectHeader:"Small subheader of what project is", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum."},
-        {projectTitle:"Project", projectHeader:"Small subheader of what project is", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum."},
-        {projectTitle:"Project", projectHeader:"Small subheader of what project is", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum."},
-        {projectTitle:"Project", projectHeader:"Small subheader of what project is", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum."},
-        {projectTitle:"Project", projectHeader:"Small subheader of what project is", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum."},
+        {projectTitle:"Portfolio", projectLink:"",image:PortfolioPreview, projectHeader:"This website you're on right now.", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum.", skills:["React", "Typescript", "Javascript", "Framer Motion", "HTML", "CSS", "Web Development"]},
+        {projectTitle:"HappyWoof", projectLink:"https://ceabyy.github.io/HappyWoof/",image:HappyWoofPreview, projectHeader:"AI-Powered Dog Emotion Interpreter", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum.", skills:["Machine Learning", "Artificial Intelligence", "Model Finetuning", "Flask", "Python", "HTML", "CSS", "Web Development"]},
+        {projectTitle:"Remote Workers' Welfare", projectLink:"https://github.com/ceabyy/remoteworkersmentalhealth",image:RemoteWorkersPreview, projectHeader:"Understanding remote workers' mental health through data analysis and science", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum.", skills:["Data Analysis", "Data Science", "Tableau", "Dashboard Creation"]},
     ]
 
     return ( 
@@ -88,7 +90,7 @@ function Projects() {
                             md:scroll-p-[1.5%]">
 
                 {projects.map((project) => (  
-                    <ProjectCard projectTitle={project.projectTitle} projectHeader={project.projectHeader} projectDescription={project.projectDescription}/>
+                    <ProjectCard key={project.projectTitle} projectTitle={project.projectTitle} projectLink={project.projectLink} image={project.image} projectHeader={project.projectHeader} projectDescription={project.projectDescription} skills={project.skills}/>
                 ))}
             </motion.div>
         </motion.div>
