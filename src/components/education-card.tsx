@@ -48,7 +48,7 @@ function EducationCard({ school, date, details }: Props) {
                             items-start"> {date} </motion.h1>
             <motion.h1 variants={ item } 
                         className="text-[20px] 
-                            font-extralight 
+                            font-light
                             text-white 
                             flex 
                             items-start 

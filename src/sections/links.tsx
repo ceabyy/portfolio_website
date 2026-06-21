@@ -44,54 +44,70 @@ function Links() {
                     viewport={{ once: true, amount: 0.3 }}
                     className="h-dvh flex flex-col items-start justify-center snap-y pl-[10%] md:pl-[15%]">
             <motion.h1 variants={ item }className="text-[30px] md:text-[40px] font-bold text-white pb-[2%]"> LINKS. </motion.h1>
-            
+
             {/* The links are below. */}
             <motion.a variants={ sidewaysItem } 
                         href = "mailto:ceabyfernandez@gmail.com" 
                         className="text-[20px]
-                                    font-light
+                                    font-regular
                                     underline 
-                                    text-[#FED6D6] 
+                                    text-[#FFE7E7] 
                                     text-underline 
                                     transition-colors 
                                     duration-300 
+
+                                    md:font-light
+                                    md:text-[#FED6D6]
+
                                     hover:text-white 
                                     hover:font-bold"> EMAIL </motion.a>          
             <motion.a variants={ sidewaysItem } 
                         href = "https://github.com/ceabyy" 
                         target="_blank" 
                         className="text-[20px] 
-                                    font-light 
+                                    font-regular 
                                     underline 
-                                    text-[#FED6D6] 
+                                    text-[#FFE7E7] 
                                     text-underline 
                                     transition-colors 
                                     duration-300 
                                     ease-in-out 
+
+                                    md:font-light
+                                    md:text-[#FED6D6] 
+
                                     hover:text-white 
                                     hover:font-bold"> GITHUB </motion.a>
             <motion.a variants={ sidewaysItem }
                         href = "https://www.linkedin.com/in/ceaby/" 
                         target="_blank" 
                         className="text-[20px] 
-                                    font-light 
+                                    font-regular
                                     underline 
-                                    text-[#FED6D6] 
+                                    text-[#FFE7E7] 
                                     text-underline 
                                     transition-colors 
                                     duration-300
+
+                                    md:font-light
+                                    md:text-[#FED6D6] 
+                            
                                     hover:text-white 
                                     hover:font-bold"> LINKEDIN </motion.a>
             <motion.a variants={ sidewaysItem } 
                         href = "https://www.youtube.com/@ceaby." 
                         target="_blank" 
                         className="text-[20px]
-                                    font-light
+                                    font-regular
                                     underline 
-                                    text-[#FED6D6] 
+                                    text-[#FFE7E7] 
                                     text-underline 
                                     transition-colors 
                                     duration-300 
+
+                                    md:font-light
+                                    md:text-[#FED6D6] 
+
                                     hover:text-white 
                                     hover:font-bold"> YOUTUBE </motion.a> 
         </motion.div>

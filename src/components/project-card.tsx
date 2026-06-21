@@ -89,30 +89,33 @@ function ProjectCard({projectTitle, projectLink, image, projectHeader, projectDe
                         md:text-[20px] 
                         text-[#C178B4] 
                         underline
+                        font-bold
+                        pt-[2%]
 
-                        -mt-1 
+                        md:font-regular
                         md:-mt-2 
-                        pt-[1%]
-                        md: pt-[5%]"> {projectHeader} </a>
+                        md:pt-[5%]"> {projectHeader} </a>
             ) : (
                     <p className="text-[15px] 
                         md:text-[20px] 
                         text-[#C178B4] 
+                        font-bold
+                        pt-[2%]
 
-                        -mt-1 
+                        md:font-regular
                         md:-mt-2 
-                        pt-[1%]
-                        md: pt-[5%]"> {projectHeader} </p>
+                        md:pt-[5%]"> {projectHeader} </p>
             )}
 
             <p className="h-[90%] 
                         w-full text-[10px] 
                         md:text-[15px] 
                         text-[#CB76B1] 
-                        font-light 
+                        font-regular 
                         pt-[0%] 
                         overflow-y-scroll
                         
+                        md:font-light
                         md:pt-[0%]
                         md:overflow-y-auto
                         break-words"> { projectDescription }  </p>

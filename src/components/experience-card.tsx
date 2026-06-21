@@ -37,7 +37,7 @@ function ExperienceCard({company, position, dates, details} : Props) {
             <p className="text-[15px] 
                         md:text-[18px] 
                         text-[#B73854] 
-                        font-light 
+                        font-regular 
                         -mt-1 
                         md:-mt-2"> { position } </p>
 
@@ -53,7 +53,7 @@ function ExperienceCard({company, position, dates, details} : Props) {
                                 text-[12px]
                                 md:text-[15px] 
                                 text-[#B73854] 
-                                font-light
+                                font-regular
                                 leading-none
                                 break-words
                                 -mt-0.8"> { detail } </li>
