@@ -5,6 +5,7 @@ import ProjectCard from '../components/project-card.tsx';
 import PortfolioPreview from '../assets/portfolio-preview.png';
 import HappyWoofPreview from '../assets/happywoof-preview.png';
 import RemoteWorkersPreview from '../assets/remoteworkers-preview.png'
+import WhatadoroPreview from '../assets/whatadoro-preview.png';
 
 import { motion, type Variants } from 'framer-motion';
 
@@ -42,9 +43,10 @@ const item: Variants = {
 function Projects() {
 
     const projects = [
-        {projectTitle:"Portfolio", projectLink:"",image:PortfolioPreview, projectHeader:"This website you're on right now.", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum.", skills:["React", "Typescript", "Javascript", "Framer Motion", "HTML", "CSS", "Web Development"]},
-        {projectTitle:"HappyWoof", projectLink:"https://ceabyy.github.io/HappyWoof/",image:HappyWoofPreview, projectHeader:"AI-Powered Dog Emotion Interpreter", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum.", skills:["Machine Learning", "Artificial Intelligence", "Model Finetuning", "Flask", "Python", "HTML", "CSS", "Web Development"]},
-        {projectTitle:"Remote Workers' Welfare", projectLink:"https://github.com/ceabyy/remoteworkersmentalhealth",image:RemoteWorkersPreview, projectHeader:"Understanding remote workers' mental health through data analysis and science", projectDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada aliquam luctus. Fusce maximus tempor laoreet. Integer eget dolor nisl. Suspendisse ultrices sodales elementum.", skills:["Data Analysis", "Data Science", "Tableau", "Dashboard Creation"]},
+        {projectTitle:"Portfolio", projectLink:"",image:PortfolioPreview, projectHeader:"This website you're on right now.", projectDescription:"A website that I made with mainly React.js, Tailwind CSS and Framer Motion for displaying my skills, projects, history and experience. A great place to get to know me professionally.", skills:["React", "Typescript", "Javascript", "Framer Motion", "HTML", "CSS", "Web Development"]},
+        {projectTitle:"HappyWoof", projectLink:"https://ceabyy.github.io/HappyWoof/",image:HappyWoofPreview, projectHeader:"AI-Powered Dog Emotion Interpreter", projectDescription:"Finetuned ResNet18 on a labelled dataset of dog images from kaggle to classify dog emotions. Inspired by many of my friends having dogs.", skills:["Machine Learning", "Artificial Intelligence", "Model Finetuning", "Flask", "Python", "HTML", "CSS", "Web Development"]},
+        {projectTitle:"Remote Workers' Welfare", projectLink:"https://github.com/ceabyy/remoteworkersmentalhealth",image:RemoteWorkersPreview, projectHeader:"Understanding remote workers' mental health through data analysis/science", projectDescription:"Learnt and used Tableau on a Kaggle dataset to investigate how remote workers compare to their non-remote counterparts.", skills:["Data Analysis", "Data Science", "Tableau", "Dashboard Creation"]},
+        {projectTitle:"whatadoro?", projectLink:"https://github.com/ceabyy/whatadoro",image:WhatadoroPreview, projectHeader:"(IN PROGRESS) AI-Powered Pomodoro Study Timer", projectDescription:"Not sure how long your pomodoro sessions should be? Let whatadoro help you figure out by automatically adjusting to you after each session!", skills:["HTML", "CSS", "Javascript", "Web Development"]},
     ]
 
     return ( 
