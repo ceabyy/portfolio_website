@@ -52,7 +52,7 @@ function App() {
                   h-dvh 
                   snap-y 
                   snap-mandatory
-                  font-['Helvetica_Neue']
+                  font-helvetica
                   
                   snap-y">
       <section className = "snap-start"> { /* snap-start to handle/mark the snap effect*/ }
