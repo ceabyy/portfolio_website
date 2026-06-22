@@ -71,7 +71,7 @@ function EducationCard({ school, date, details }: Props) {
             <motion.div variants={ NestedContainer }
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: true, amount: 0.3}}s 
+                        viewport={{ once: true, amount: 0.3 }}
                         className="text-[20px] 
                             font-light
                             text-white 
