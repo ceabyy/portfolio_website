@@ -11,7 +11,7 @@ export default defineConfig({
     tailwindcss(),
     meta ({
       title: "Ceaby's Portfolio",
-      description: "A website porfolio by and for Ceaby Kian Fernandez. This website was made with React.js and Tailwind CSS.",
+      description: "A website porfolio by and for Ceaby Kian Fernandez showcasing projects, experience and background.",
       img: null,
     })
   ],
