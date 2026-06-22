@@ -68,10 +68,7 @@ function EducationCard({ school, date, details }: Props) {
                             italic 
                             flex 
                             items-start"> {date} </motion.h1>
-            <motion.div variants={ NestedContainer }
-                        initial="hidden"
-                        whileInView="show"
-                        viewport={{ once: true, amount: 0.3 }}
+            <motion.div variants={ item }
                         className="text-[20px] 
                             font-light
                             text-white 
@@ -80,8 +77,7 @@ function EducationCard({ school, date, details }: Props) {
                             items-start 
                             pt-[5%]"> 
                             {details.map((detail) => (
-                                <motion.p variants={ sidewaysItem }
-                                        key={detail}> { detail } </motion.p>
+                                <p key={detail}> { detail } </p>
                             ))} 
             </motion.div>
         </motion.div>
