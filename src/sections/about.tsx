@@ -36,20 +36,27 @@ const item: Variants = {
 function About() {
 
     const skills = [
-        { id:"Python", name:"Python" },
-        { id:"C#", name:"C#" },
-        { id:"JavaScript", name:"JavaScript" },
-        { id:"React.js", name:"React.js" },
-        { id:"HTML", name:"HTML" },
-        { id:"C++", name:"C++" },
-        { id:"Object-Oriented Programming", name:"Object-Oriented Programming" },
-        { id:"Supabase", name:"Supabase" },
-        { id:"Next.js", name:"Next.js" },
-        { id:"Data Structures & Algorithms", name:"Data Structures & Algorithms" },
-        { id:"CSS", name:"CSS" },
-        { id:"CSS", name:"CSS" },
-        { id:"CSS", name:"CSS" },
-        { id:"CSS", name:"CSS" },
+        { id: "Python", name: "Python" },
+        { id: "C#", name: "C#" },
+        { id: "HTML", name: "HTML" },
+        { id: "CSS", name: "CSS" },
+        { id: "Tailwind CSS", name: "Tailwind CSS" },
+        { id: "JavaScript", name: "JavaScript" },
+        { id: "React.js", name: "React.js" },
+        { id: "Next.js", name: "Next.js" },
+        { id: "Supabase", name: "Supabase" },
+        { id: "Vercel", name: "Vercel" },
+        { id: "SQL", name: "SQL" },
+        { id: "PostgreSQL", name: "PostgreSQL" },
+        { id: "Object-Oriented Programming", name: "Object-Oriented Programming" },
+        { id: "C++", name: "C++" },
+        { id: "pandas", name: "pandas" },
+        { id: "PyTorch", name: "PyTorch" },
+        { id: "numpy", name: "numpy" },
+        { id: "matplotlib", name: "matplotlib" },
+        { id: "OpenCV", name: "OpenCV" },
+        { id: "Jupyter Notebook", name: "Jupyter Notebook" },
+        { id: "Git Version Control", name: "Git Version Control" },
     ]
 
     return(
@@ -128,7 +135,7 @@ function About() {
                                 pb-[3%]"> ABOUT. </motion.h1>
                 <motion.p variants={ item } className="text-white 
                             font-extralight 
-                            md:text-[20px] "> Hi! My name is Ceaby. I'd say I'm very attentive, curious, self-motivated and thrive as a team leader or member. I'm a Bachelor of Science (Technology) graduate, having majored in signal processing and machine learning (ML), with a further educational background in computer science, ML and artificial intelligence (AI).</motion.p>
+                            md:text-[20px] "> Hi! My name is Ceaby. I'd say I'm very attentive, curious, self-motivated and thrive as a team leader or member. I'm a Bachelor of Science (Technology) graduate, having majored in signal processing and machine learning (ML), minoring in Information Technology (Software Enginering focus), with professional experience in software development, as well as project experience with AI and software.</motion.p>
             
             </motion.section> 
             {/* potential column 3 for ascii of my photo */}
