@@ -16,15 +16,6 @@ const container: Variants = {
     }
 };
 
-const NestedContainer: Variants = {
-    hidden: {},
-    show: {
-        transition: {
-            staggerChildren: 0.2        
-        }
-    }
-};
-
 const item: Variants = {
     hidden: { opacity: 0, y: 40 },
     show: {
@@ -37,17 +28,6 @@ const item: Variants = {
     }
 }
 
-const sidewaysItem: Variants = {
-    hidden: { opacity: 0, x:-40 },
-    show: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            duration: 0.5,
-            ease: "easeInOut"
-        }
-    }
-};
 
 function EducationCard({ school, date, details }: Props) {
     return (
