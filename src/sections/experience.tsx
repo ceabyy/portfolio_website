@@ -48,10 +48,22 @@ const NestedItem: Variants = {
 function Experience() {
 
     const experience = [
-        { company:"A&A Accounting", position:"Computer Science Intern", dates:"June 2026 - Present", details:["Worked on full stack creation of accounting software"]},
-        { company:"Tampere University", position: "Content Crew Student Ambassador", dates:"October 2024 - December 2025", details:["Worked on posting on university social media", "Teamwork and collaboration in brainstorming ideas"] },
-        { company:"Tampere University", position: "Faculty Social Media Assistant", dates:"August 2023 - June 2024", details:["Worked on posting on university faculty's social media", "Attained top-ranking posts in the accounts' history"] },
-        { company:"Fandom Shop QA", position: "Owner", dates:"March 2019 - March 2020", details:["Coordinated logistics to bring K-Pop merch to Qatar", "Managed social media, directly communicating with customers"] },
+        { company:"A&A Accounting", position:"Computer Science Intern", dates:"June 2026 - Present", details:["Full stack work on the company's own accounting software",
+                                                                                                            "Implemented new features to enhance user experience",
+                                                                                                            "Relevant skills: React.js, Tailwind CSS, TypeScript, JavaScript, PostgreSQL, Next.js, Supabase, Vercel"]},
+        { company:"Tampere University", position: "Content Crew Student Ambassador", dates:"October 2024 - December 2025", details:["Cooperated in a team setting to devise and create promotional content for various social media platforms.", 
+                                                                                                                                    "Increased engagement in multiple facets and attained top-ranking posts.", 
+                                                                                                                                    "Provided perspectives to advocate for the inclusion of the international student experience in marketing."] },
+        { company:"Tampere University", position: "Faculty Social Media Assistant", dates:"August 2023 - June 2024", details:["Strategized posts of multiple formats to promote the university faculty on multiple social media platforms", 
+                                                                                                                            "Improved engagement and achieved high-performing posts, especially Instagram Reels",
+                                                                                                                        	"Attained top-performing posts, doubling interactions relative to previous peaks"] },
+        { company:"Fandom Shop QA", position: "Owner", dates:"March 2019 - March 2020", details:["Coordinated logistics to bring K-Pop merch to Qatar, filling a market gap", 
+                                                                                                "Managed social media using various strategies, directly communicating with customers, gaining market share",
+                                                                                                ]},
+        { company:"Roblox Game Studio", position: "Owner", dates:"August 2017 - November 2019", details:["Led, managed and cooperated with a team of four members for a passion project in game development",
+                                                                                                        "Involvement in multiple facets of development – scripting/programming, world building, model making, graphic design, etc."
+                                                                                                        ]},                                                                                           
+                                                                                                                                    
     ]
 
     return (

@@ -17,12 +17,12 @@ function Education() {
             <EducationCard
                 school="Tampere University"
                 date="August 2022 - December 2025"
-                details="Bachelor of Science (Technology)"
+                details={["Tampere University Full Scholar", "Bachelor of Science (Technology)"]}
             />
             <EducationCard 
                 school="Mesaieed International School"
-                date="2009-2022"
-                details="A-Levels: Computer Science A*, Mathematics A*, Physics A"
+                date="2009 - 2022"
+                details={["A-Levels: Computer Science A*, Mathematics A*, Physics A"]}
             />
         </div>
     )
