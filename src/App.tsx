@@ -33,7 +33,7 @@ function App() {
         #DFBDFF 56%,
         #5D91A2 60%,
         #DD8736 63%,
-        #FFFAF9 67%,
+        #ead595 67%,
         #F1C6FF 69%,
         #9FD9E6 72%,
         #5EBACF 76%,
