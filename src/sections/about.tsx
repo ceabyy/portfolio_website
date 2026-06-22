@@ -70,8 +70,9 @@ function About() {
                     items-center 
                     justify-center 
                     snap-y 
-                    gap-[5%]
-                    
+                    gap-0
+
+                    md:gap-[5%]
                     md:flex-row">
             {/* column 1 */}
             <motion.section variants={ item }
@@ -80,8 +81,8 @@ function About() {
                                 flex-col 
                                 items-start 
                                 justify-center 
-                                pl-[20%] 
-                                pr-[20%] 
+                                pl-[10%] 
+                                pr-[10%] 
                                 
                                 md:pl-[10%] 
                                 md:pr-0 
@@ -120,8 +121,8 @@ function About() {
                                 flex-col 
                                 items-start 
                                 justify-center 
-                                pl-[20%] 
-                                pr-[20%] 
+                                pl-[10%] 
+                                pr-[10%] 
                                 
                                 md:pl-[10%] 
                                 md:pr-[15%] 
