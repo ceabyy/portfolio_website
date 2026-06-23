@@ -24,8 +24,7 @@ function ProjectSkillsBubble({ name }: Props) {
                     className="bg-[#F5BEE3]/60
                         shadow-md
                         rounded-[15px]">
-            <p className="text-[#CB76B1]
-
+            <p className="text-[#CB76B1]   
                         text-[12px] 
                         md:text-[15px]
                         
