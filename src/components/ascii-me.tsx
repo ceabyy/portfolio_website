@@ -80,7 +80,7 @@ function AsciiMemoji() {
             className="absolute
                         inset-0
                         font-mono
-                        text-white/80
+                        text-white/60
                         pointer-events-none
                         select-none
                         overflow-hidden

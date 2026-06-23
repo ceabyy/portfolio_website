@@ -12,21 +12,24 @@ const container: Variants = {
 
 // motion
 const item: Variants = {
-    hidden: { opacity: 0, y: 40 },
+    hidden: { opacity: 0, filter: "blur(5px)", y: 20 },
     show: {
         opacity: 1,
+        filter: "blur(0px)",
         y: 0,
         transition: {
-            duration: 0.6,
+            duration: 0.4,
             ease: "easeInOut"
         }
     }
 }
 
+
 const sidewaysItem: Variants = {
-    hidden: { opacity: 0, x:-20 },
+    hidden: { opacity: 0, filter: "blur(5px)", x:-20 },
     show: {
         opacity: 1,
+        filter: "blur(0px)",
         x: 0,
         transition: {
             duration: 0.6,

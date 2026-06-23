@@ -11,18 +11,19 @@ const container: Variants = {
     hidden: {},
     show: {
         transition: {
-            staggerChildren: 0.15
+            staggerChildren: 0.1
         }
     }
 };
 
 const item: Variants = {
-    hidden: { opacity: 0, y: 40 },
+    hidden: { opacity: 0, filter: "blur(5px)", y: 20 },
     show: {
         opacity: 1,
+        filter: "blur(0px)",
         y: 0,
         transition: {
-            duration: 0.6,
+            duration: 0.4,
             ease: "easeInOut"
         }
     }
