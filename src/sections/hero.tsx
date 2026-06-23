@@ -31,11 +31,13 @@ function Hero() {
             whileInView="show"
             viewport={{ once: true, amount: 0.3}}
             className="h-dvh 
+                        relative
                         flex
                         flex-col 
                         items-start 
                         justify-center 
                         snap-y 
+                        z-2
                         pl-[15%]">
 
             <motion.h1 variants={item} className="text-[20px] 

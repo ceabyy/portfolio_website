@@ -64,13 +64,15 @@ function About() {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.3 }}
-                    className="h-dvh 
+                    className="relative
+                    h-dvh 
                     flex 
                     flex-col 
                     items-center 
                     justify-center 
                     snap-y 
                     gap-0
+                    z-2
 
                     md:gap-[5%]
                     md:flex-row">

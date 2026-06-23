@@ -5,6 +5,7 @@ import Experience from './sections/experience.tsx'
 import Projects from './sections/projects.tsx'
 import Education from './sections/education.tsx'
 import Links from './sections/links.tsx'
+import AsciiMemoji from './components/ascii-me.tsx';
 
 
 function App() {
@@ -53,12 +54,15 @@ function App() {
                   snap-y 
                   snap-mandatory
                   font-helvetica
-                  
+
                   snap-y">
-      <section className = "snap-start"> { /* snap-start to handle/mark the snap effect*/ }
+
+
+      <section className = "snap-start relative h-dvh overflow-hidden"> { /* snap-start to handle/mark the snap effect*/ }
+        <AsciiMemoji />
         <Hero /> 
       </section>
-      <section className = "snap-start"> 
+      <section className = "snap-start relative h-dvh overflow-hidden"> 
         <About /> 
       </section>
       <section className = "snap-start"> 
