@@ -7,46 +7,71 @@ import Education from './sections/education.tsx'
 import Links from './sections/links.tsx'
 import AsciiMemoji from './components/ascii-me.tsx';
 
+// fot smooth scrolling
+import Lenis from 'lenis';
+import { useEffect, useRef } from 'react';
 
 function App() {
+  
+  const containerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (!containerRef.current) return;
+
+        const lenis = new Lenis({
+            wrapper: containerRef.current,   // 👈 point at your div
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            orientation: 'vertical',
+        });
+
+        function raf(time: number) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+        return () => lenis.destroy();
+    }, []);
 
   return (
     // handling background of the page using gradients from figma prototype.
-    <div style={{
-      background: `linear-gradient(to bottom,
-        #FFE398 0%,
-        #FF8AAB 4%,
-        #FFB029 9%,
-        #74D3A7 13%,
-        #EEF2FF 18%,
-        #4366C9 23%,
-        #1E3576 26%,
-        #071E24 30%,
-        #0D0529 31%,
-        #11010A 32%,
-        #160518 33%,
-        #F45667 35%,
-        #FD3CA0 40%,
-        #FF9EBB 45%,
-        #FFDDE1 48%,
-        #FFF0F1 52%,
-        #FFC4FF 55%,
-        #DFBDFF 56%,
-        #5D91A2 60%,
-        #DD8736 63%,
-        #fee9a8 67%,
-        #dbb2e8 69%,
-        #8fc6d2 72%,
-        #5EBACF 76%,
-        #B7CF8D 80%,
-        #eac8b9 85%,
-        #E83F42 93%,
-        #D6D329 95%,
-        #E4FC87 100%
-      )`,
-      backgroundAttachment: 'local',
-      backgroundSize: '100% 600lvh',
-      backgroundRepeat: 'no-repeat'
+    <div ref={containerRef}   // 👈 attach ref   
+          style={{
+            background: `linear-gradient(to bottom,
+              #FFE398 0%,
+              #FF8AAB 4%,
+              #FFB029 9%,
+              #74D3A7 13%,
+              #EEF2FF 18%,
+              #4366C9 23%,
+              #1E3576 26%,
+              #071E24 30%,
+              #0D0529 31%,
+              #11010A 32%,
+              #160518 33%,
+              #F45667 35%,
+              #FD3CA0 40%,
+              #FF9EBB 45%,
+              #FFDDE1 48%,
+              #FFF0F1 52%,
+              #FFC4FF 55%,
+              #DFBDFF 56%,
+              #5D91A2 60%,
+              #DD8736 63%,
+              #fee9a8 67%,
+              #dbb2e8 69%,
+              #8fc6d2 72%,
+              #5EBACF 76%,
+              #B7CF8D 80%,
+              #eac8b9 85%,
+              #E83F42 93%,
+              #D6D329 95%,
+              #E4FC87 100%
+            )`,
+            backgroundAttachment: 'local',
+            backgroundSize: '100% 600lvh',
+            backgroundRepeat: 'no-repeat'
     }} className="main-page 
           
                   overflow-y-scroll 
