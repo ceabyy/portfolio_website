@@ -55,7 +55,7 @@ function App() {
                   snap-mandatory
                   font-helvetica
 
-                  snap-y">
+                  md:snap-none">
 
 
       <section className = "snap-start relative h-dvh overflow-hidden"> { /* snap-start to handle/mark the snap effect*/ }
